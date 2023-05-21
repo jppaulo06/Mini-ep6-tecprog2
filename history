@@ -1,0 +1,1 @@
+docker container run --name my-caddy-server -p 8080:80 -v $PWD/usr/src/pages:/usr/src/pages custom-caddy
