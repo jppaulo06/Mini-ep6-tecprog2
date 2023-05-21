@@ -1,0 +1,13 @@
+
+Primeiro comando para criar a imagem:
+
+docker image build . -t custom-caddy:alpine-2.6.4
+
+Para executar o container:
+
+docker container run \
+--name my-caddy-server \
+-p 8080:80 \
+-v ./usr/src/pages:/usr/src/pages \
+-d custom-caddy:alpine-2.6.4
+
